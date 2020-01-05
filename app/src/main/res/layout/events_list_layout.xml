@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="eventsData"
+            type="com.mobapproject.eventsroom.data.Event" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/browser_actions_title_color"
+            app:cardBackgroundColor="@color/holder_window_color"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="30dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/event_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{eventsData.eventimage.url}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/ic_gerald_g_boy_face_cartoon" />
+
+
+                <LinearLayout
+                    android:id="@+id/container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/custom_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/event_image">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.20"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/linear_share_id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/share_event_icon"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/share_option" />
+
+                            <TextView
+                                android:id="@+id/share_label"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="match_parent"
+                                android:textAlignment="textStart"
+                                android:textSize="20sp"
+                                android:text="Share" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/item_more_option"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/more_horiz_24px"
+                                android:visibility="gone"
+                                android:layout_weight="0.15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/interest_linear_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/coming_question"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                tools:srcCompat="@drawable/drive_eta_24px"
+                                android:layout_weight="0.15" />
+
+                            <TextView
+                                android:id="@+id/interest_label"
+                                android:layout_width="0dp"
+                                tools:text="Coming?"
+                                android:textSize="18dp"
+                                android:layout_weight="0.4"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.20"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/emoji_events_24px" />
+
+                        <TextView
+                            android:id="@+id/event_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@{eventsData.title}"
+                            android:textColor="#000"
+                            android:textSize="19sp"
+                            android:layout_weight="0.7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/placeholderlocation" />
+
+                        <TextView
+                            android:id="@+id/event_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@{eventsData.eventLocation}"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            app:srcCompat="@drawable/people_coming" />
+
+                        <TextView
+                            android:id="@+id/people_coming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:textSize="19sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/see_detail_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Would you like to attend? touch to see detail..."
+                        android:textColor="@color/lightDark"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/eventListFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.mobapproject.eventsroom.fragments.EventListFragment"
+        android:label="EventListFragment">
+        <action
+            android:id="@+id/action_eventListFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.mobapproject.eventsroom.fragments.EventDetailFragment"
+        android:label="EventDetailFragment">
+        <argument
+            android:name="selectedEvent"
+            app:argType="com.mobapproject.eventsroom.data.Event" />
+        <action
+            android:id="@+id/action_eventDetailFragment_to_currentWeatherFragment"
+            app:destination="@id/currentWeatherFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/newEventCreatingFragment"
+        android:name="com.mobapproject.eventsroom.fragments.NewEventCreatingFragment"
+        android:label="NewEventCreatingFragment">
+        <action
+            android:id="@+id/action_newEventCreatingFragment_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:enterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.mobapproject.eventsroom.fragments.CurrentWeatherFragment"
+        android:label="CurrentWeatherFragment">
+        <argument
+            android:name="cityOfEvent"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_currentWeatherFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"
+            app:enterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+</navigation>

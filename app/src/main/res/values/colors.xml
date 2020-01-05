@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="action_bar_color">#FFFFFF</color>
+
+    <color name="lightDark">#2b2626</color>
+    <color name="veryDarkGray">#696969</color>
+    <color name="lightBlack">#1a1a1a</color>
+
+    <color name="custom_color">#e0e0e0</color>
+    <color name="popup_window_color">#c7c7c7</color>
+    <color name="holder_window_color">#c7c7c7</color>
+    <color name="veryLightGray">#fefefe</color>
+</resources>

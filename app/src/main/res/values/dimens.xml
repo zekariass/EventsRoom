@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="body_text_size">17</dimen>
+    <dimen name="title_text_size">25</dimen>
+    <dimen name="weather_text_size">21</dimen>
+</resources>

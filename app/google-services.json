@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809450481282",
+    "firebase_url": "https://eventsroom-aee26.firebaseio.com",
+    "project_id": "eventsroom-aee26",
+    "storage_bucket": "eventsroom-aee26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809450481282:android:df513d58e654f365b4369b",
+        "android_client_info": {
+          "package_name": "com.mobapproject.eventsroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809450481282-lfupskn114g7i4qssgmt0kvmhb5g0vm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobapproject.eventsroom",
+            "certificate_hash": "815fa1afb59c14fba8be40321c3d7c869aa3b79c"
+          }
+        },
+        {
+          "client_id": "809450481282-4kvemlajb47eipeff05rgseljf5lemmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy1ulkTe4wjB9kBmQLNrMdyIqs9TjHHGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809450481282-4kvemlajb47eipeff05rgseljf5lemmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

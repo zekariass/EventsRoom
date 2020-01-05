@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">EventsRoom</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="event_title">Event: %s</string>
+    <string name="event_time">Time On: %s</string>
+    <string name="event_date">Date of Event: %s</string>
+    <string name="event_location">SpecificLocation: %s</string>
+    <string name="event_city">City: %s</string>
+    <string name="event_country">Country: %s</string>
+    <string name="event_description">Detail: %s</string>
+    <string name="event_posted_on">Posted on: %s</string>
+    <string name="event_event_status">Event status: %s</string>
+    <string name="create_event_menu_item">New Event</string>
+    <string name="people_coming">%s Person coming</string>
+    <string name="city_weather">See current weather in %s</string>
+    <string name="share_slogan">==== Shared Event ====</string>
+    <string name="share_app_title">==== From EventsRoom App ====</string>
+
+    <string name="location_at">\@: %s</string>
+
+    <string name="facebook_application_id" translatable="false">577066863079074</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb577066863079074</string>
+    <string name="signout">Logout</string>
+    <string name="filter_by_city_country">Filter By City and Country</string>
+    <string name="my_events">My Events</string>
+    <string name="all_events">All Events</string>
+    <string name="filter_city">City</string>
+    <string name="filter_country">Country</string>
+    <string name="about">About</string>
+    <string name="refresh">Refresh</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_detail_text">This App is developed by Zekarias Semegnew, for course project (Mobile application and cloud coumputing).</string>
+    <string-array name="change_event_status_array">
+        <item>Open</item>
+        <item>Close</item>
+    </string-array>
+</resources>
